@@ -1,0 +1,108 @@
+.dashboard {
+  padding: 20px;
+
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .logout-button {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .widget-stats {
+    height: 100%;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .table-card {
+    .card-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 15px 20px;
+
+      strong {
+        font-size: 18px;
+      }
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .table-controls {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      .form-select {
+        width: auto;
+      }
+
+      .input-group {
+        width: auto;
+      }
+    }
+
+    .table {
+      th {
+        cursor: pointer;
+        user-select: none;
+        
+        &:hover {
+          background-color: #e9ecef;
+        }
+      }
+    }
+  }
+}
+
+// Responsive düzenlemeler
+@media (max-width: 768px) {
+  .dashboard {
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .logout-button {
+        margin-top: 10px;
+      }
+    }
+
+    .table-card {
+      .table-controls {
+        flex-direction: column;
+
+        .form-select, .input-group {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

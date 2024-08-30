@@ -1,0 +1,15 @@
+v3 için durum bilgisi
+geçiçi kayıt ve sonrasında dashboard sayfasına yönlendirme çalışıyor
+dashboard görünümü sorunsuz görünüyor
+
+----
+
+v4
+dashboard linkleri ve sayfa geçişleri kontrol edildi sorun yok
+witgetler eklendi gerekli css dosyaları düzenlendi.
+
+----
+
+v5
+mongodb veri tabanı bağlantısı yapıldı
+kullanıcı üye olup giriş yapabiliyor

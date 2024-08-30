@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$sidebar-bg-color: #1d1d1d;
+$submenu-bg-color: rgba(255, 255, 255, 0.05);
+$submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
+$sidebar-color: #adadad;
+$highlight-color: #d8d8d8;
+$icon-bg-color: rgba(255, 255, 255, 0.05);
+$icon-size: 35px;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #353535;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+}
+
+main {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.logotext {
+  p {
+    font-size: 20px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.closemenu {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  line-height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 22px;
+  top: 55px;
+  cursor: pointer;
+}
+
+.pro-sidebar {
+  .pro-menu {
+    padding: 0;
+  }
+}
+
+.pro-sidebar-inner {
+  background: $sidebar-bg-color;
+  box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.pro-sidebar.collapsed {
+  width: 80px;
+  min-width: 80px;
+}
+
+.pro-sidebar-header {
+  padding: 20px;
+}
+
+.pro-sidebar-content {
+  padding-top: 20px;
+}
+
+.pro-sidebar-footer {
+  padding: 20px;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item {
+  padding: 8px 35px 8px 20px;
+}
